@@ -300,7 +300,7 @@ section#top_banner {
   font-size: 16px;
 }
 
-section.information .img-resposive {
+section.information .img-responsive {
   margin: 0 auto;
 }
 section.information .right_info {
@@ -511,7 +511,7 @@ section.information .right_info > .descr {
 }
 #footer .logo_info > .descr {
   color: #160637;
-  font-size: 14px;
+  font-size: 13px;
   margin: 16px 0;
   line-height: 1.65;
 }
@@ -528,10 +528,12 @@ section.information .right_info > .descr {
   justify-content: center;
   width: 16px;
   height: 16px;
-  transition: transform 0.4s ease;
   text-decoration: none;
 }
-#footer .logo_info > .social > li > a:hover {
+#footer .logo_info > .social > li > a > img {
+  transition: transform 0.4s ease;
+}
+#footer .logo_info > .social > li > a:hover > img {
   transform: translateY(-8px);
 }
 #footer .logo_info > .social > li:last-child {
@@ -587,7 +589,7 @@ section.information .right_info > .descr {
   max-width: 100%;
 }
 #footer .newsletter > form > input::placeholder {
-  color: #footer .newsletter > form > input::placeholder gray;
+  color: #8989A2;
   font-size: 14px;
 }
 #footer .newsletter > form > button {

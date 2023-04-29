@@ -253,7 +253,7 @@ section
 				font-size: 16px
 
 section.information
-	.img-resposive
+	.img-responsive
 		margin: 0 auto
 	.right_info
 		padding-left: 50px
@@ -428,7 +428,7 @@ section.information
 				margin: 0 auto
 		>.descr
 			color: $dark_accent
-			font-size: 14px
+			font-size: 13px
 			margin: 16px 0
 			line-height: 1.65
 		>.social
@@ -442,9 +442,10 @@ section.information
 					justify-content: center
 					width: 16px
 					height: 16px
-					transition: transform .4s ease
 					text-decoration: none
-					&:hover
+					>img
+						transition: transform .4s ease
+					&:hover >img
 						transform: translateY(-8px)
 				&:last-child
 					margin-right: 0
@@ -492,7 +493,7 @@ section.information
 				padding: 12px 40px 12px 16px
 				max-width: 100%
 				&::placeholder
-					color: &gray
+					color: $gray
 					font-size: 14px
 			>button
 				position: absolute
