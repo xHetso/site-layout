@@ -2,15 +2,18 @@ $(function() {
 
 	new WOW().init();
 
+	/*Menu mobile open*/
+
 	$(".hamburger").click(function(){
 		$(this).toggleClass("is-active");
 
 		if($(this).hasClass('is-active')){
-			$('.mnu_top').slideDown(300);
+			$('.menu_top').slideDown(300);
 		}else{
-			$('.mnu_top').slideUp(300);
+			$('.menu_top').slideUp(300);
 		}
 	});
+	/*Menu mobile open*/
 
 	/*reviews tabs*/ 
 	$('.nav_rev > div').click(function(){

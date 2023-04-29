@@ -207,7 +207,7 @@ h1,h2,h3,h4
 			margin: 14px 0 44px
 			font-size: 18px
 		>.btns
-			display:flex
+			display: flex
 			align-items: center
 			>.btn_white
 				margin-left: 16px
@@ -408,7 +408,7 @@ section.information
 
 #footer
 	background-color: #FBFCFF
-	padding: 60px 0 0
+	padding: 60px 0
 	.row_flex
 		display: flex
 		flex-wrap: wrap
@@ -519,5 +519,23 @@ section.information
 		margin-top: 66px
 		text-align: center
 
+.hamburger
+	display: none
+	.line
+		width: 24px
+		height: 3px
+		background-color: #333
+		display: block
+		margin: 6px auto
+		transition: all 0.3s ease-in-out
+	&:hover
+		cursor: pointer
+	&.is-active .line
+		&:nth-child(1)
+			transform: translateY(9px) rotate(45deg)
+		&:nth-child(2)
+			opacity: 0
+		&:nth-child(3)
+			transform: translateY(-9px) rotate(-45deg)
 
 		

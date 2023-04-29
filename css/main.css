@@ -247,6 +247,7 @@ h1, h2, h3, h4 {
   font-size: 18px;
 }
 .main_banner .mb_info > .btns {
+  display: flex;
   align-items: center;
 }
 .main_banner .mb_info > .btns > .btn_white {
@@ -485,7 +486,7 @@ section.information .right_info > .descr {
 
 #footer {
   background-color: #FBFCFF;
-  padding: 60px 0 0;
+  padding: 60px 0;
 }
 #footer .row_flex {
   display: flex;
@@ -617,4 +618,28 @@ section.information .right_info > .descr {
   font-size: 16px;
   margin-top: 66px;
   text-align: center;
+}
+
+.hamburger {
+  display: none;
+}
+.hamburger .line {
+  width: 24px;
+  height: 3px;
+  background-color: #333;
+  display: block;
+  margin: 6px auto;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger.is-active .line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.hamburger.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.is-active .line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }/*# sourceMappingURL=main.css.map */
