@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 
@@ -59,7 +59,7 @@
 							</li>
 							<li><a href="#">Pricing</a></li>
 							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Login</a></li>
+							<li><a href="#pre_footer" class="yakor">Login</a></li>
 						</ul>
 						<a href="#" class="btn_simple">Get Started</a>
 					</div>
@@ -70,7 +70,7 @@
 		<div class="main_banner">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-md-7 order-lg-1 order-2">
+					<div class="col-lg-6 col-md-7 order-lg-1 order-2 wow fadeInLeft" data-wow-duration="1s">
 						<div class="mb_info">
 							<div class="notif">
 								<img src="img/main_banner/update_icon_mb.svg" alt="">
@@ -88,8 +88,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-5 order-lg-2 order-1">
-						<img src="img/main_banner/image_mb.svg" alt="" class="img-responsive">
+					<div class="col-lg-6 col-md-5 order-lg-2 order-1 wow fadeInRight" data-wow-duration="1s">
+						<picture class="img-responsive">
+							<source srcset="img/main_banner/image_mb.webp" type="image/webp">
+							<img src="img/main_banner/image_mb.png" alt="">
+						</picture>
 					</div>
 				</div>
 			</div>
@@ -97,7 +100,7 @@
 	</section>
 
 	<section id="advantages">
-		<div class="container">
+		<div class="container wow fadeIn" data-wow-duration="2s">
 			<div class="notif">
 				<img src="img/advantages/why_icon.svg" alt="">
 				<p>Why Qubly</p>
@@ -136,10 +139,10 @@
 	<section id="info_1" class="information">
 		<div class="container">
 			<div class="row d-flex align-items-center">
-				<div class="col-lg-6 col-md-4"><img src="img/information/info_img_1.svg" alt="" class="img-responsive">
+				<div class="col-lg-6 col-md-4 wow fadeInLeft" data-wow-duration="1s"><img src="img/information/info_img_1.svg" alt="" class="img-responsive animate_graphic">
 
 				</div>
-				<div class="col-lg-6 col-md-8">
+				<div class="col-lg-6 col-md-8 wow fadeInRight" data-wow-duration="1s">
 					<div class="right_info">
 						<div class="notif">
 							<img src="img/information/icon_native_1.svg" alt="">
@@ -158,7 +161,7 @@
 	<section id="info_2" class="information">
 		<div class="container">
 			<div class="row d-flex align-items-center">
-				<div class="col-lg-6 col-md-8">
+				<div class="col-lg-6 col-md-8 wow fadeInLeft" data-wow-duration="1s">
 					<div class="right_info">
 						<div class="notif">
 							<img src="img/information/icon_native_2.svg" alt="">
@@ -170,7 +173,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-4"><img src="img/information/info_img_2.svg" alt="" class="img-responsive">
+				<div class="col-lg-6 col-md-4 wow fadeInRight" data-wow-duration="1s"><img src="img/information/info_img_2.svg" alt="" class="img-responsive animate_graphic">
 				</div>
 			</div>
 		</div>
@@ -178,7 +181,8 @@
 
 	<section id="reviews">
 		<div class="container">
-			<div id="rev_1" class="item_rev active">
+			<h1>Feedback from our clients:</h1>
+			<div id="rev_1" class="item_rev active wow fadeIn" data-wow-duration="2s">
 				<div class="quotes">
 					"What I love about Qubly is the easy way we can collaborate even if there is a lot of people involved in the process"
 				</div>
@@ -250,19 +254,19 @@
 		</div>
 	</section>
 
-	<section class="pre_footer">
+	<section id="pre_footer">
 		<div class="container">
 			<div class="row d-flex align-items-center">
-				<div class="col-lg-6">
+				<div class="col-lg-6 wow fadeInLeft" data-wow-duration="1s">
 					<div class="pf_info">
 						<h4>See why the world's best companies use Qubly to become truly data-driven.</h4>
-						<img src="img/pre_footer/linepf.svg" class="line_img"alt="">
+						<img src="img/pre_footer/linepf.svg" class="line_img" alt="">
 						<img src="img/pre_footer/Clients_logos.svg" alt="Accenture">
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 wow fadeInRight" data-wow-duration="1s">
 					<div class="form_wrapper">
-						<form action="mail.php" metgod="POST">
+						<form action="mail.php" method="POST">
 							<h4>Sign Up</h4>
 							<input type="text" placeholder="Your primary email" name="email" required>
 							<input type="password" placeholder="Password" name="password" required>
@@ -276,14 +280,14 @@
 							<a href="#">
 								<img src="img/pre_footer/btn_google.svg" alt="">
 							</a>
-							<footer_form>
+							<div class="footer_form">
 								<div class="line"></div>
 								<p>Already have an account?
 									<a href="#">
 										Login
 									</a>
 								</p>
-							</footer_form>
+							</div>
 						</form>
 					</div>
 				</div>
@@ -424,13 +428,12 @@
 	<!-- libs -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="libs/animate.css">
 
 	<script src="libs/jquery/dist/jquery.min.js"></script>
-	<script src="libs/jquery.fancybox.min.js"></script>
+
 	<script src="libs/wow.min.js"></script>
 
 	<link rel="stylesheet" href="css/main.css">

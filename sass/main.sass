@@ -316,6 +316,11 @@ section.information
 				transform: scale(1.1)
 			>img
 				height: 100px
+	.container
+		text-align: center
+		>h1
+			display: block
+			margin-bottom: 20px
 
 .btn_form
 	display: block
@@ -334,7 +339,7 @@ section.information
 	&:hover
 		border-radius: 30px 
 
-.pre_footer
+#pre_footer
 	.pf_info
 		>h4
 			color: $dark_accent
@@ -538,4 +543,13 @@ section.information
 		&:nth-child(3)
 			transform: translateY(-9px) rotate(-45deg)
 
+.animate_graphic
+	transition: none
+	animation: 2s infinite alternate movingAn
+
+@keyframes movingAn
+	from
+		transform: translateX(0)
+	to
+		transform: translateX(10px)
 		
