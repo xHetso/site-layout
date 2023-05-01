@@ -198,6 +198,19 @@
   .row_adv > div:last-child {
     margin-bottom: 0;
   }
+  #reviews .nav_rev {
+    justify-content: space-around;
+    gap: 53px;
+  }
+  #pre_footer .pf_info > h4 {
+    font-size: 34px;
+  }
+  #pre_footer .form_wrapper {
+    max-width: 360px;
+  }
+  #footer .menu_footer_wrapper {
+    margin: 0 5px;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
